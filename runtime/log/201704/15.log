@@ -1,0 +1,71 @@
+[ 2017-04-15T10:21:27+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php
+[ log ] www.pys.com/mengchong/public/index.php [运行时间：0.535893s][吞吐率：1.87req/s] [内存消耗：1,758.19kb] [文件加载：40]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pys.com/mengchong/public/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3067.6 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104387s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.062588s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.137895s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.014185s ]
+
+---------------------------------------------------------------
+[ 2017-04-15T10:21:40+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/service/index
+[ log ] www.pys.com/mengchong/public/index.php/index/service/index [运行时间：0.801863s][吞吐率：1.25req/s] [内存消耗：1,710.69kb] [文件加载：39]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3067.6 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Service->index[ E:\PYS\mengchong\application\index\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\service\index.html [ array (
+  0 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033586s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_serType` [ RunTime:0.720994s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_serType` [ RunTime:0.004586s ]
+
+---------------------------------------------------------------

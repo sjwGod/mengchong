@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0, maximum-scale=1.0">
+<meta content="telephone=no" name="format-detection" />
+<title>帮5买触屏版手机导购网站模板 - 购物列表</title>
+
+<link rel="stylesheet" href="__ROOT__/css/wap/index.css" type="text/css" />
+<script type="text/javascript" src="__ROOT__/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="topBar">
+		<div class="l">
+			<a class="arrow" href="javascript:history.go(-1);"></a>
+		</div>
+		<h1>发现实惠</h1>
+	</nav>
+	<!-- <div class="b5mConLis" id="mainDiv"> -->
+	
+		<ul class="infoLis">
+		<center>
+		<h3 style="color: red">由于您信息不完善，请完善收货信息后再购买商品</h3>
+
+				<form action="{:Url('addPerfect')}" method="post" id="form"  onsubmit="return true">
+					<table>
+						<tr>
+							<td>收货人：</td>
+							<td><input type="text" name="address_name"></td>
+						</tr>
+						<tr>
+							<td>收货地址：</td>
+							<td><input type="text" name="address"></td>
+						</tr>
+						<tr>
+							<td>收货电话：</td>
+							<td><input type="text" name="address_tel"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" value="提交"><span style="color: red" class="sp"></span></td>
+						</tr>
+					</table>
+				</form>
+		</center>
+		</ul>
+	
+	<!-- </div> -->
+	
+
+
+<footer class="footer">
+	<div class="top">
+		
+			欢迎登录<span style="color:red;">萌宠商城</span>
+			<a href="{:url('login/login')}" >退出账号</a>
+		
+		<!-- <a href=""></a><a href=""></a><a class="btn" href="#">Top</a> -->
+	</div>
+
+	<p>Copyright&nbsp;&nbsp;&nbsp;萌宠商城 版权所有</p>
+</footer>
+	
+</body>
+</html>
+<script>
+	$('#form').submit(function()
+	{
+		//获取信息
+		var address_name = $("input[name = 'address_name']").val();
+		var address = $("input[name = 'address']").val();
+		var address_tel = $("input[name = 'address_tel']").val();
+		if( address_name == '' || address == ''  || address_tel == '')
+		{
+			$('.sp').html('请将您的信息填写完整');
+			return false;
+		}
+	})
+</script>

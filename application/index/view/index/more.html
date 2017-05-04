@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0, maximum-scale=1.0">
+<meta content="telephone=no" name="format-detection" />
+<title>帮5买触屏版手机导购网站模板 - 购物列表</title>
+
+<link rel="stylesheet" href="__ROOT__/css/wap/index.css" type="text/css" />
+<script type="text/javascript" src="__ROOT__/js/jquery.min.js"></script>
+
+</head>
+<body>
+	<nav class="topBar">
+		<div class="l">
+			<a class="arrow" href="javascript:history.go(-1);"></a>
+		</div>
+		<h1>发现实惠</h1>
+	</nav>
+	<!-- <div class="b5mConLis" id="mainDiv"> -->
+	
+		<ul class="infoLis">
+				{volist name="data" id="v"}
+				<li><a href="{:url('detail',['goods_id'=>$v.goods_id])}">
+						<h1 style="font-size: 14px">SLIK 竖力 F143 三角架 </h1>
+						<div class="img">
+							<img src="__ROOT__/uploads/{$v.goods_img}" alt="">
+						</div>
+						<h2>
+							<span class="d">￥</span>{$v.price} <span class="r">{$v.brand_name}</span>
+						</h2>
+						<p>{$v.brand_desc}</p>
+				</a></li>
+				{/volist}
+		</ul>
+	
+	<!-- </div> -->
+	<br>
+	<div class="infoPages">
+		
+			<a href="{:url('more',['page'=>$up])}">上一页</a>
+		
+		
+		<span>{$page}/{$total}</span>
+		
+		
+			<a href="{:url('more',['page'=>$down])}">下一页</a>
+		
+	</div>
+	<br>
+	
+
+
+<footer class="footer">
+	<div class="top">
+		
+			{if condition="$status == 0"}
+			<a href="{:url('login/login')}" onClick="_gaq.push([ '_trackEvent', 'm.b5m.com', 'clicked', '登录' ]);">登录</a>|
+			<a href="{:url('login/reg')}" onClick="_gaq.push([ '_trackEvent', 'm.b5m.com', 'clicked', '注册' ]);">注册</a>
+			<a class="btn" href="#">Top</a>
+			{else /}
+			欢迎登录<span style="color:red;">萌宠商城</span>
+			<a href="{:url('login/login')}" >退出账号</a>
+			{/if}
+		
+		<!-- <a href=""></a><a href=""></a><a class="btn" href="#">Top</a> -->
+	</div>
+
+	<p>Copyright&nbsp;&nbsp;&nbsp;萌宠商城 版权所有</p>
+</footer>
+	
+</body>
+</html>

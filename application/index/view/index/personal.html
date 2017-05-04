@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;
+</title>
+<meta charset="utf-8">
+<meta name="author" content="m.boqii.com">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = '__ROOT__/login/zz.bdstatic.com/linksubmit/push.js'/*tpa=https://zz.bdstatic.com/linksubmit/push.js*/;
+    }
+    else {
+        bp.src = '__ROOT__/login/push.zhanzhang.baidu.com/push.js'/*tpa=http://push.zhanzhang.baidu.com/push.js*/;
+    }
+    bp.async = "async";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<link href="__ROOT__/login/css/fc10f6847e0c38498fbb.vendors.min.css"  rel="stylesheet">
+<link href="__ROOT__/login/css/292f66746d567445d7b8.personal.min.css"  rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+<header>
+<div class="boqi-header">
+<div class="boqi-header-div">
+<h1 class="page-title">&#x6211;&#x7684;&#x6CE2;&#x5947;
+</h1>
+<a href="index.html">
+<i class="back-icon icon-back"></i>
+</a>
+</div>
+</div>
+</header>
+<?php if (empty($session)) { ?>
+<section>
+<div class="my-account">
+<div class="my-account-container">
+<a href="javascript:;" class="my-photoLink">
+<img class="my-photo" src="__ROOT__/login/images/v2.7/user.jpg"  alt="&#x6211;&#x7684;&#x9753;&#x7167;"></a>
+<div class="click2login">
+<a class="unlogin_operation" href="{:url('login/login')}" >&#x767B;&#x5F55;</a>/<a class="unlogin_operation" href="{:url('login/reg')}" >&#x6CE8;&#x518C;</a>
+<p class="logined_info"><span class="username"></span> <span class="personlevel"><img src="__ROOT__/login/images/v2.7/level.png"  class="level"><i>1</i></span></p>
+</div>
+</div>
+</div>
+</section>
+<?php }else{ ?>
+<section>
+<div class="my-account">
+<div class="my-account-container">
+<a href="javascript:;" class="my-photoLink">
+<img class="my-photo" src="__ROOT__/login/images/pan1.jpg" tppabs="" alt="&#x6211;&#x7684;&#x9753;&#x7167;"></a>
+<div class="click2login">
+<a class="unlogin_operation" href="" ><span style="color:red"><?php echo $session[1] ?></span></a>
+<p class="logined_info"><span class="username"></span> <span class="personlevel">
+<img src="__ROOT__/login/images/v.jpg" tppabs="" class="level"><i><span style="color:red">1</span></i></span></p>
+</div>
+</div>
+</div>
+</section>
+<?php } ?>
+<div class="wx_my_box">
+<div class="wx_my_title">
+<a href="orders.html-OrderType=1.htm" >
+<span>&#x67E5;&#x770B;&#x5168;&#x90E8;&#x5546;&#x57CE;&#x8BA2;&#x5355;
+<i></i>
+</span>
+<h3>&#x5546;&#x57CE;&#x8BA2;&#x5355;
+</h3>
+</a>
+</div>
+<ul class="wx-profile-list">
+<li class="myprofile">
+<div>
+<a href="orders.html-OrderType=2.htm"  class="s_unpay">
+<i class="icon-order-pay"></i> &#x5F85;&#x4ED8;&#x6B3E; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+<li class="order_list">
+<div>
+<a href="orders.html-OrderType=3.htm"  class="s_process">
+<i class="icon-order-chu"></i> &#x5904;&#x7406;&#x4E2D; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="orders.html-OrderType=6.htm"  class="s_uncomments">
+<i class="icon-order-dai"></i> &#x5F85;&#x8BC4;&#x4EF7; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="orders.html-OrderType=4.htm"  class="s_success">
+<i class="icon-order-succ"></i> &#x5DF2;&#x5B8C;&#x6210; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="wx_my_box marginTop12">
+<div class="wx_my_title vetshop">
+<a href="javascript:;">
+<span>&#x67E5;&#x770B;&#x5168;&#x90E8;&#x670D;&#x52A1;&#x8BA2;&#x5355;
+<i></i>
+</span>
+<h3>&#x670D;&#x52A1;&#x8BA2;&#x5355;
+</h3>
+</a>
+</div>
+<ul class="wx-profile-list">
+<li class="myprofile">
+<div>
+<a href="javascript:;" class="o_unpay">
+<i class="icon-order-pay"></i> &#x5F85;&#x4ED8;&#x6B3E; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+<li class="order_list">
+<div>
+<a href="javascript:;" class="o_unuse">
+<i class="icon-order-use"></i> &#x5F85;&#x4F7F;&#x7528; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:;" class="o_uncomments">
+<i class="icon-order-dai"></i> &#x5F85;&#x8BC4;&#x4EF7; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:;" class="o_success">
+<i class="icon-order-succ"></i> &#x5DF2;&#x5B8C;&#x6210; 
+<span class="redpoint">
+</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="wx_my_box marginTop12 marginBot50">
+<ul class="wx-profile-list nomar">
+<li class="order_list">
+<div>
+<a href="myaccount.html" >
+<i class="icon-my-account"></i> &#x6211;&#x7684;&#x8D26;&#x6237;
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="coupon.html" >
+<i class="icon-my-coupon"></i> &#x6211;&#x7684;&#x4F18;&#x60E0;&#x5238;
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="prizetowithdraw.html" >
+<i class="icon-my-prize"></i> &#x5151;&#x5956;&#x4E2D;&#x5FC3;
+</a>
+</div>
+</li>
+<li class="myprofile">
+<div>
+<a href="my-collection.html" >
+<i class="icon-my-collect"></i> &#x6211;&#x7684;&#x6536;&#x85CF;
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="home_icon">
+<a href="{:url('index/index')}">
+<img src="__ROOT__/login/7xq22v.com2.z0.glb.qiniucdn.com/home_icon.png" >
+</a>
+</div>
+</div>
+<script src="js/fc194781f111c9adf2b8.vendors.min.js" >
+</script>
+<script src="__ROOT__/js/acd1ae1fd70dbc450b6f.personal.min.js" tppabs="http://s.boqii.com/js/acd1ae1fd70dbc450b6f.personal.min.js">/</script>
+<script src="js/acd1ae1fd70dbc450b6f.personal.min.js" >
+</script>
+</body>
+<script src="__ROOT__/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+var _py = _py || []; _py.push(['a', '83s..kWM5IA5gIUIhz2_VJGhaYX']);
+_py.push(['domain','http://s.boqii.com/stats.ipinyou.com']); _py.push(['e','']);
+-function(d) {
+var s = d.createElement('script'),
+e = d.body.getElementsByTagName('script')[0];
+e.parentNode.insertBefore(s, e),
+f = 'https:' == location.protocol;
+s.src = (f ? 'https' : 'http') + '://'+(f?'http://s.boqii.com/fm.ipinyou.com':'http://s.boqii.com/fm.p0y.cn')+'/j/adv.js';
+}(document);
+</script>
+<noscript>
+<!-- img src="__ROOT__/login/stats.ipinyou.com/adv.gif-a=83s..kWM5IA5gIUIhz2_VJGhaYX&e=.gif" tppabs="http://stats.ipinyou.com/adv.gif?a=83s..kWM5IA5gIUIhz2_VJGhaYX&e=" style="display:none"> -->
+<img src="__ROOT__/login/stats.ipinyou.com/ypgf.png"  style="">
+</noscript>
+</html>

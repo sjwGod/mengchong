@@ -1,0 +1,366 @@
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "宋体";
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.box header {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #b0b0b0;
+}
+.box header .h_left {
+  width: 4rem;
+  height: 3.9rem;
+  background: none;
+  text-align: center;
+  line-height: 3.9rem;
+  font-size: 1.6rem;
+}
+.box header .h_left a {
+  color: #f95850;
+}
+.box header .h_center {
+  -webkit-box-flex: 1;
+  line-height: 4rem;
+}
+.box header .h_center h2 {
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.box header .h_right {
+  width: 4rem;
+  height: 3.9rem;
+  background: none;
+  text-align: center;
+  line-height: 5rem;
+}
+.box section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+.box section::-webkit-scrollbar {
+  width: 0;
+}
+.box section .list {
+  width: 100%;
+  height: 8.8rem;
+  background: none;
+  margin-top: 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.box section .list dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 2rem;
+}
+.box section .list dl dt {
+  width: 9.4rem;
+  height: 8.8rem;
+  background: none;
+  padding: 4px 20px;
+}
+.box section .list dl dd {
+  -webkit-box-flex: 1;
+}
+.box section .list dl dd h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.box section .list dl dd p {
+  display: inline-block;
+}
+.box section .list dl dd span {
+  padding: 15px;
+  color: #919191;
+}
+.box section .list dl dd i em {
+  font-size: 1.4rem;
+  color: #919191;
+}
+.box section .list dl dd i img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.box section .city {
+  width: 100%;
+  height: 7rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 7rem;
+  border-bottom: 1px solid #dddddd;
+}
+.box section .city .c_l {
+  -webkit-box-flex: 1;
+  margin-left: 10px;
+  font-size: 1.6rem;
+}
+.box section .city .c_l img {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.box section .city .c_r {
+  border-left: 1px solid #dddddd;
+  text-align: center;
+  width: 4rem;
+  height: 7rem;
+  background: none;
+}
+.box section .youhui {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  margin-top: 5px;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 4rem;
+}
+.box section .youhui h3 {
+  -webkit-box-flex: 1;
+  margin-left: 5px;
+  font-size: 1.4rem;
+}
+.box section .youhui .y_r {
+  width: 8.5rem;
+  height: 4rem;
+  background: none;
+  text-align: center;
+}
+.box section .banner {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+}
+.box section .banner ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section .banner ul li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 4rem;
+}
+.box section .banner ul li a {
+  color: #000;
+  font-size: 1.4rem;
+}
+.box section .banner .active {
+  background: #ddd;
+}
+.box section .big_s {
+  width: 100%;
+  height: 15rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+.box section .big_s .shop {
+  width: 100%;
+  height: 15rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section .big_s .shop .s_l {
+  width: 8rem;
+  height: 15rem;
+  background: none;
+}
+.box section .big_s .shop .s_l ul li {
+  border-bottom: 1px solid #B0B0B0;
+  text-align: center;
+  padding: 5px;
+  line-height: 2.6rem;
+  background: #dddddd;
+}
+.box section .big_s .shop .s_l .active {
+  color: orange;
+}
+.box section .big_s .shop .s_r {
+  margin-left: 20px;
+  -webkit-box-flex: 1;
+  line-height: 2.6rem;
+}
+.box section .big_s .shop .s_r .s_r_one h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.box section .big_s .shop .s_r .s_r_one p {
+  display: inline-block;
+}
+.box section .big_s .shop .s_r .s_r_one span {
+  padding: 15px;
+  color: #919191;
+}
+.box section .big_s .shop .s_r .s_r_one .price {
+  width: 100%;
+  height: 2rem;
+  background: none;
+}
+.box section .big_s .shop .s_r .s_r_one .price span {
+  color: #fe8528;
+}
+.box section .big_s .shop .s_r .s_r_one .price strong {
+  font-size: .6785714286rem;
+  color: #b4b4b4;
+  margin-left: 1.0357142857rem;
+  text-decoration: line-through;
+}
+.box section .big_s .shop .s_r .s_r_one .price button {
+  border: none;
+  border-radius: 3px;
+  float: right;
+  width: 4rem;
+  height: 2rem;
+  background: #fd4a00;
+  color: white;
+  font-weight: bold;
+}
+.box section .big_s .shop .s_r .s_r_two h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.box section .big_s .shop .s_r .s_r_two p {
+  display: inline-block;
+}
+.box section .big_s .shop .s_r .s_r_two span {
+  padding: 15px;
+  color: #919191;
+}
+.box section .big_s .shop .s_r .s_r_two .price {
+  width: 100%;
+  height: 2rem;
+  background: none;
+}
+.box section .big_s .shop .s_r .s_r_two .price span {
+  color: #fe8528;
+}
+.box section .big_s .shop .s_r .s_r_two .price strong {
+  font-size: .6785714286rem;
+  color: #b4b4b4;
+  margin-left: 1.0357142857rem;
+  text-decoration: line-through;
+}
+.box section .big_s .shop .s_r .s_r_two .price button {
+  border: none;
+  border-radius: 3px;
+  float: right;
+  width: 4rem;
+  height: 2rem;
+  background: #fd4a00;
+  color: white;
+  font-weight: bold;
+}
+.box section .big_s .shop .s_r .s_r_three h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.box section .big_s .shop .s_r .s_r_three p {
+  display: inline-block;
+}
+.box section .big_s .shop .s_r .s_r_three span {
+  padding: 15px;
+  color: #919191;
+}
+.box section .big_s .shop .s_r .s_r_three .price {
+  width: 100%;
+  height: 2rem;
+  background: none;
+}
+.box section .big_s .shop .s_r .s_r_three .price span {
+  color: #fe8528;
+}
+.box section .big_s .shop .s_r .s_r_three .price strong {
+  font-size: .6785714286rem;
+  color: #b4b4b4;
+  margin-left: 1.0357142857rem;
+  text-decoration: line-through;
+}
+.box section .big_s .shop .s_r .s_r_three .price button {
+  border: none;
+  border-radius: 3px;
+  float: right;
+  width: 4rem;
+  height: 2rem;
+  background: #fd4a00;
+  color: white;
+  font-weight: bold;
+}
+.box section .big_s .shop .s_r .s_r_four h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.box section .big_s .shop .s_r .s_r_four p {
+  display: inline-block;
+}
+.box section .big_s .shop .s_r .s_r_four span {
+  padding: 15px;
+  color: #919191;
+}
+.box section .big_s .shop .s_r .s_r_four .price {
+  width: 100%;
+  height: 2rem;
+  background: none;
+}
+.box section .big_s .shop .s_r .s_r_four .price span {
+  color: #fe8528;
+}
+.box section .big_s .shop .s_r .s_r_four .price strong {
+  font-size: .6785714286rem;
+  color: #b4b4b4;
+  margin-left: 1.0357142857rem;
+  text-decoration: line-through;
+}
+.box section .big_s .shop .s_r .s_r_four .price button {
+  border: none;
+  border-radius: 3px;
+  float: right;
+  width: 4rem;
+  height: 2rem;
+  background: #fd4a00;
+  color: white;
+  font-weight: bold;
+}
+.box section .big_s .shop_o {
+  width: 100%;
+  height: 15rem;
+  /*background: #ff0000;*/
+}
+.box section .big_s .shop_t {
+  width: 100%;
+  height: 15rem;
+  /*background: #0000ff;*/
+}
+.box section .big_s .shop_h {
+  width: 100%;
+  height: 15rem;
+  /*background: #ffff00;*/
+}

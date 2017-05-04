@@ -1,0 +1,128 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"E:\PYS\mengchong\public/../application/index\view\bbs\liebiao.html";i:1493206134;}*/ ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="apple-touch-startup-image" href="__ROOT__/qq/zn/icon.png" />
+<link rel="apple-touch-icon" href="__ROOT__/qq/zn/icon57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="__ROOT__/qq/zn/icon72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="__ROOT__/qq/zn/icon114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="__ROOT__/qq/zn/icon144.png" />
+<link href="__ROOT__/qq/zn/style/common.css" rel="Stylesheet" type="text/css" />
+<link href="__ROOT__/qq/zn/style/list.css" rel="Stylesheet" type="text/css" />
+
+	<!--<link href="__ROOT__/bootstrap/css/bootstrap.css" rel="stylesheet">-->
+	<!--&lt;!&ndash;<script src="/scripts/jquery.min.js"></script>&ndash;&gt;-->
+	<!--<script src="__ROOT__/bootstrap/js/bootstrap.min.js"></script>-->
+<title>萌宠 模块列表</title>
+<meta name="keywords" content="萌宠" />
+<meta name="description" content="萌宠"/>
+</head>
+<body>
+<!--头部-->
+
+
+<script type="text/javascript" src="__ROOT__/qq/zn/script/zepto.min.js"></script>
+<script type="text/javascript" src="__ROOT__/qq/zn/script/common.js"></script>
+<div id="dd_more">
+	<a href="liebiao.html" class="dd_bt1 dd_bt">全部圈子</a>
+	<a rel="nofollow" href="#" class="dd_bt2 dd_bt">我的圈圈</a>
+	<a rel="nofollow" href="#" class="dd_bt3 dd_bt">我的好友</a>
+	<a rel="nofollow" href="#" class="dd_bt4 dd_bt">退出登陆</a>
+</div>
+<div id="dd_msg">
+	
+		<script type="text/javascript" src="__ROOT__/qq/zn/script/msg.js"></script>
+	
+	<div class="msgLoading"></div>
+	<p class="tC"><a href="../ShowMessage.html">查看更多&gt;</a></p>
+</div>
+<header id="header" class="ch m">
+
+		<!--<a class="logo" href="index.html" title="萌宠首页">萌宠首页</a>-->
+		<a class="log" href="index.html" title="萌宠首页">萌宠首页</a>
+
+	<?php if($state==1): ?>
+	<!--{}-->
+	<!--未登录-->
+	<div class="nolog">
+		<a rel="nofollow" href="<?php echo url('login/login'); ?>">登录</a>
+		|
+		<a rel="nofollow" href="<?php echo url('login/reg'); ?>">注册</a>
+	</div>
+	<?php else: ?>
+	<div class="nolog">
+		欢迎<?php echo $username; ?>
+	</div>
+	<?php endif; ?>
+	
+</header>
+
+<section id="main" class="m">
+	<!--圈子信息-->
+	<div id="qms">
+		<img src="__ROOT__/qq/channel/logo/xzQ.gif" class="ico"/>
+		<span class="m1" style="color: #00a3d2"><?php echo $sectiondata['sname']; ?>&nbsp;(<?php echo $sectiondata['stopiccount']; ?>)个贴</span>
+
+		<span class="m2"><?php echo $sectiondata['sprofile']; ?></span>
+		<!--如果已经登录显示发帖按钮，如果没有登录提示只有登录才可以发帖-->
+		<?php if($state==1): ?>
+		<!--{}-->
+		<!--未登录-->
+		<span style="color: #f43838">登录后发帖呦</span>
+		<?php else: ?>
+		<a href="posttopic?tsid=<?php echo $sectiondata['sid']; ?>"><button>发帖</button></a>
+		<?php endif; ?>
+
+	</div>
+	<div id="ajaxList">
+
+<ul class="list">
+	
+
+	<?php foreach($topicdata as $val): ?>
+		<li>
+			<a href="zhengwen?id=<?php echo $val['tid']; ?>" class="tx" style="color: #00aeee"><?php echo $val['topic']; ?></a>
+			<br/>
+			<div class="tR">
+				<span class="qq l" style="color: #4ebc30"><?php echo $val['tuname']; ?></span>
+					<a class="sd" href="#"><?php echo $val['tclickcount']; ?></a>
+				&nbsp;|&nbsp;
+				<span class="tm">
+					<?php echo $val['time']; ?>
+				</span>
+			</div>
+		</li>
+	<?php endforeach; ?>
+</ul>
+
+
+			<!--<div class="jiazai">-->
+					<!--<a class="wb changeb" href="javascript:void(0);" data-url="http://m.100bt.com/zn/LoadCategoryTopic.html?ttqId=20&blockId=0&topicStyle=0&offset=20">点击加载更多</a>-->
+			<!--</div>-->
+	</div>
+	<!--END 数据列表-->
+</section>
+<div class="selfpage" style="width: 80px;height: 30px;margin:0 auto;" >
+
+</div>
+<!--分页-->
+
+<div class="pager">
+	<a href="liebiao?id=<?php echo $pageshow['id']; ?>&page=<?php echo $pageshow['up']; ?>" >上一页</a>
+	&nbsp;&nbsp;
+	<span class="ct"><?php echo $pageshow['page']; ?>&nbsp;/&nbsp;<?php echo $pageshow['totalpage']; ?></span>
+	&nbsp
+	&nbsp;
+	<a href="liebiao?id=<?php echo $pageshow['id']; ?>&page=<?php echo $pageshow['down']; ?>" >下一页</a>
+</div>
+<footer id="footer">
+
+	 <!--<a href="index.html">首页</a>  <a href="liebiao.html">文章列表页</a>  <a href="zhengwen.html">正文页</a>-->
+</footer>
+<a href="#header" id="bTop" title="返回顶部"></a>
+</body>
+<script type="text/javascript" src="__ROOT__/qq/zn/script/category.js"></script>
+</html>

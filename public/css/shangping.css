@@ -1,0 +1,124 @@
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "宋体";
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.box header {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #b0b0b0;
+}
+.box header .h_left {
+  width: 4rem;
+  height: 3.9rem;
+  background: none;
+  text-align: center;
+  line-height: 3.9rem;
+  font-size: 1.6rem;
+}
+.box header .h_left a {
+  color: #f95850;
+}
+.box header .h_center {
+  -webkit-box-flex: 1;
+  line-height: 4rem;
+}
+.box header .h_center h2 {
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.box header .h_right {
+  width: 4rem;
+  height: 3.9rem;
+  background: none;
+  text-align: center;
+  line-height: 5rem;
+}
+.box section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+.box section::-webkit-scrollbar {
+  width: 0;
+}
+.box section .tilte {
+  width: 100%;
+  height: 3.5rem;
+  background: none;
+  border-bottom: 1px solid #dcdcdc;
+}
+.box section .tilte ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section .tilte ul li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  border-left: 1px solid #dcdcdc;
+  padding: 10px;
+}
+.box section .tilte ul li img {
+  margin-left: 10px;
+}
+.box section .tilte ul li a {
+  color: #382b32;
+}
+.box section .list {
+  width: 100%;
+  height: 8.8rem;
+  background: none;
+  margin-top: 10px;
+}
+.box section .list dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 2rem;
+}
+.box section .list dl dt {
+  width: 9.4rem;
+  height: 8.8rem;
+  background: none;
+  padding: 10px 20px;
+}
+.box section .list dl dd {
+  -webkit-box-flex: 1;
+}
+.box section .list dl dd h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.box section .list dl dd p {
+  display: inline-block;
+}
+.box section .list dl dd span {
+  padding: 15px;
+  color: #919191;
+}
+.box section .list ul li {
+  line-height: 2.6rem;
+}
+.box section .list ul li img {
+  vertical-align: middle;
+}
+.box section .list ul li p {
+  margin-left: 5px;
+  color: #9f9f9f;
+}

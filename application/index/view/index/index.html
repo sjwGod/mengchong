@@ -1,0 +1,116 @@
+<?php 
+use think\Session;
+ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0, maximum-scale=1.0">
+<meta content="telephone=no" name="format-detection" />
+<title>萌宠商城</title>
+<link rel="stylesheet" href="__ROOT__/css/wap/index.css" type="text/css" />
+<script type="text/javascript" src="__ROOT__/js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+	<form action="" method="post">
+		<nav class="topBar cfx">
+			<div class="l">
+				<a class="logo" href="index.html"></a>
+			</div>
+			<h1>
+				<input class="search sIcon" type="text" name="keyword" placeholder="输入关键词搜索" id="keyword" />
+			</h1>
+			<div class="r">
+				<a href="{:Url('index')}" class="search_a">搜索</a>
+			</div>
+		</nav>
+	</form>
+	<script>
+		$('.search_a').click(function()
+		{
+			var keyword = $('#keyword').val();
+			$(this).prop('href',"{:Url('index')}?goods_name="+keyword);
+		})
+	</script>
+
+
+<section class="nav">
+	<a class="nav1" href="{:url('index/category')}"><img
+		src="__ROOT__/images/blank.gif" alt=""><span>商品分类</span>
+	</a><a class="nav2" href="{:url('index/personal')}"><img src="__ROOT__/images/blank.gif"
+		alt="" /><span>个人中心</span>
+	</a><a class="nav3" href="{:url('service/index')}"><img src="__ROOT__/images/blank.gif"
+		alt="" /><span>萌宠服务</span>
+	</a><a class="nav4" href="{:url('bbs/index')}"><img
+		src="__ROOT__/images/blank.gif" alt="" /><span>萌宠论坛</span>
+	</a>
+</section>
+	<ul class="menu">
+		
+			{volist name="model_category" id="v"}
+			<li><a href="{:url('first',['c_id'=>$v.c_id])}">{$v.c_name}</a></li>
+			{/volist}
+	</ul>
+	</header>
+	<div class="content">
+		<h3 class="tit">
+			<img class="icSale" src="__ROOT__/images/blank.gif" alt="" />最新品
+			<span><a href="{:url('more')}">更多</a></span>
+		</h3>
+		<div class="icHot sec">
+			<!-- begin -->
+			<ul>
+			{volist name='data_new' id='v'}
+			<li>
+						<a href="{:url('detail',['goods_id'=>$v.goods_id])}" onClick="_gaq.push([ '_trackEvent', 'm.b5m.com', 'clicked', '热门主题' ]);">
+							<img src="__ROOT__/uploads/{$v.goods_img}"/>
+							<h4>{$v.goods_name}</h4>
+							<p>{$v.goods_desc}</p>
+						</a>
+					</li>
+			{/volist}
+			</ul>
+			<!-- end -->
+			<div class="cl"></div>
+		</div>
+		<h3 class="tit">
+			<img class="icHot" src="__ROOT__/images/blank.gif" alt="" />最热品
+			<span><a href="{:url('more')}">更多</a></span>
+		</h3>
+		<div class="icHot sec">
+			<ul>
+				<!-- begin -->
+					{volist name='data_hot' id='v'}
+					<li>
+						<a href="{:url('detail',['goods_id'=>$v.goods_id])}" onClick="_gaq.push([ '_trackEvent', 'm.b5m.com', 'clicked', '热门主题' ]);">
+							<img src="__ROOT__/uploads/{$v.goods_img}"/>
+							<h4>{$v.goods_name}</h4>
+							<p>{$v.goods_desc}</p>
+						</a>
+					</li>
+					{/volist}
+				<!-- end -->
+			</ul>
+			<div class="cl"></div>
+		</div>
+	</div>
+<footer class="footer">
+	<div class="top">
+		<?php $session = Session::get('username'); ?>
+			{if condition="$status == 0"}
+			<a href="{:url('login/login')}" onClick="_gaq.push([ '_trackEvent', 'm.b5m.com', 'clicked', '登录' ]);">登录</a>|
+			<a href="{:url('login/reg')}" onClick="_gaq.push([ '_trackEvent', 'm.b5m.com', 'clicked', '注册' ]);">注册</a>
+			<a class="btn" href="#">Top</a>
+			{else /}
+			欢迎<span style="color:red"><?php echo $session[1]; ?></span>登录<span style="color:red;">萌宠商城
+			<a href="{:url('index/layout')}" >退出账号</a>
+			{/if}
+		
+		<!-- <a href=""></a><a href=""></a><a class="btn" href="#">Top</a> -->
+	</div>
+
+	<p>Copyright&nbsp;&nbsp;&nbsp;萌宠商城 版权所有</p>
+</footer>
+</body>
+</html>

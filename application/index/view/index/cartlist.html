@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0, maximum-scale=1.0">
+<meta content="telephone=no" name="format-detection" />
+<title>帮5买触屏版手机导购网站模板 - 文章正文</title>
+
+
+<link rel="stylesheet" href="__ROOT__/css/wap/index.css" type="text/css" />
+<script type="text/javascript" src="__ROOT__/js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="__ROOT__/css/wap/korea.css" />
+
+</head>
+<body>
+    <div class="news">
+        <div class="news-fixed">
+            <!-- <span class="fl">&lt;</span> -->
+            <a href="javascript:history.go(-1);" class="fl"></a>
+            <h1>订单支付</h1>
+        </div>
+        <div class="news-article">
+        <center>
+            <p style="color: red">温馨提示：订单提交成功，不再予以退回，请确认相关商品信息后提交订单</p>
+        </center>
+        </div>
+	        <div class="news-recommend">
+	        	<p style="color: green">下面是您购物车所选的商品</p>
+	        </div>
+	        <div>
+				<center>
+				<form method="post" action="{:Url('order')}">
+				<table border="1">
+						<input type="hidden" class="cart" name="cart">
+						<input type="hidden" class="cart_id" name="cart_id">
+						<tr>
+							<th><input type="checkbox" class="check">全选</th>
+							<th>商品图片</th>
+							<th>商品名称</th>
+							<th>商品价格</th>
+							<th>购买数量</th>
+						</tr>
+						{volist name='data' id='v'}
+						<tr>
+							<td><input type="checkbox" class="checkAll" num="{$v.num}" price="{$v.price}"  cart_id={$v.cart_id}></td>
+							<td><img src="__ROOT__/uploads/{$v.goods_img}" alt="图片" width="100"></td>
+							<td>{$v.goods_name}</td>
+							<td>{$v.price}</td>
+							<td>{$v.num}</td>
+						</tr>
+						{/volist}
+				</table>
+				<input type="submit" value="去结算" class="submit"><span style="color: red" class="sp"></span>
+				</form>
+				</center>
+	        </div>
+    </div>
+    <br>
+    
+
+
+<footer class="footer">
+	<div class="top">
+		
+		
+			欢迎登录<span style="color:red;">萌宠商城</span>
+			<a href="{:url('login/login')}" >退出账号</a>
+		
+		<!-- <a href=""></a><a href=""></a><a class="btn" href="#">Top</a> -->
+	</div>
+
+	<p>Copyright&nbsp;&nbsp;&nbsp;萌宠商城 版权所有</p>
+</footer>
+
+
+</body>
+</html>
+<script src="__ROOT__/js/jquery-2.1.1.min.js"></script>
+<script>
+	//全选全不选
+	$('.check').click(function()
+	{
+		_this = $(this);
+		if(_this.prop('checked') == true)
+		{
+			 $('input[name="checkAll"]').prop('checked',true);
+		}
+		else
+		{
+			 $('input[name="checkAll"]').prop('checked',false);
+		}
+	})
+
+	//点击去结算
+	$('.submit').click(function()
+	{
+		var checkAll = $('.checkAll');
+		var len = checkAll.length;
+		var str = '';
+		var id = '';
+		for(var i=0;i<len;i++)
+		{
+			if(checkAll.eq(i).prop('checked') == true)
+			{
+				id += ','+checkAll.eq(i).attr('cart_id');
+				str += ','+checkAll.eq(i).attr('num')*checkAll.eq(i).attr('price');
+			}
+			
+		}
+		id = id.substr(1);
+		str = str.substr(1);
+		if(str == '')
+		{
+			$('.sp').html('请选择商品');
+			return false;
+		}
+		else
+		{
+			$('.sp').html('');
+			$('.cart').val(str);
+			$('.cart_id').val(id);
+		}
+	})
+</script>

@@ -1,0 +1,1742 @@
+[ 2017-04-28T09:24:09+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php
+[ log ] www.pys.com/mengchong/public/index.php [运行时间：21.079777s][吞吐率：0.05req/s] [内存消耗：1,998.39kb] [文件加载：54]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[E:\PYS\mengchong\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:42+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php
+[ log ] www.pys.com/mengchong/public/index.php [运行时间：0.645633s][吞吐率：1.55req/s] [内存消耗：2,086.09kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+  2 => 'status',
+  3 => 'model_category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132324s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.213408s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.170098s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_category` [ RunTime:0.081225s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_category` WHERE  `p_id` = 0 [ RunTime:0.000963s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:48+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/index/personal.html
+[ log ] www.pys.com/mengchong/public/index.php/index/index/personal.html [运行时间：0.025328s][吞吐率：39.48req/s] [内存消耗：1,295.73kb] [文件加载：47]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'personal',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->personal[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\personal.html [ array (
+  0 => 'session',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:48+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/index/js/fc194781f111c9adf2b8.vendors.min.js
+[ log ] www.pys.com/mengchong/public/index.php/index/index/js/fc194781f111c9adf2b8.vendors.min.js [运行时间：0.027852s][吞吐率：35.90req/s] [内存消耗：1,254.86kb] [文件加载：48]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:48+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/api.share.baidu.com/s.gif?r=http%3A%2F%2Fwww.pys.com%2Fmengchong%2Fpublic%2Findex.php&l=http://www.pys.com/mengchong/public/index.php/index/index/personal.html
+[ log ] www.pys.com/mengchong/public/index.php/index/api.share.baidu.com/s.gif?r=http%3A%2F%2Fwww.pys.com%2Fmengchong%2Fpublic%2Findex.php&l=http://www.pys.com/mengchong/public/index.php/index/index/personal.html [运行时间：0.026466s][吞吐率：37.78req/s] [内存消耗：999.46kb] [文件加载：41]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api.share.baidu.com',
+    2 => 's.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+  'r' => 'http://www.pys.com/mengchong/public/index.php',
+  'l' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:49+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/index/js/acd1ae1fd70dbc450b6f.personal.min.js
+[ log ] www.pys.com/mengchong/public/index.php/index/index/js/acd1ae1fd70dbc450b6f.personal.min.js [运行时间：0.030778s][吞吐率：32.49req/s] [内存消耗：1,255.29kb] [文件加载：48]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:50+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php
+[ log ] www.pys.com/mengchong/public/index.php [运行时间：0.047955s][吞吐率：20.85req/s] [内存消耗：2,085.90kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+  2 => 'status',
+  3 => 'model_category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002748s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_category` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_category` WHERE  `p_id` = 0 [ RunTime:0.001318s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:51+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/service/index.html
+[ log ] www.pys.com/mengchong/public/index.php/index/service/index.html [运行时间：0.132650s][吞吐率：7.54req/s] [内存消耗：2,023.08kb] [文件加载：52]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Service->index[ E:\PYS\mengchong\application\index\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\service\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010595s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.078935s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` [ RunTime:0.001799s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:52+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php
+[ log ] www.pys.com/mengchong/public/index.php [运行时间：0.053736s][吞吐率：18.61req/s] [内存消耗：2,085.90kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+  2 => 'status',
+  3 => 'model_category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011600s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.003724s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_category` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_category` WHERE  `p_id` = 0 [ RunTime:0.000903s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:54+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/bbs/index.html
+[ log ] www.pys.com/mengchong/public/index.php/index/bbs/index.html [运行时间：0.154099s][吞吐率：6.49req/s] [内存消耗：2,079.01kb] [文件加载：56]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'bbs',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Bbs->index[ E:\PYS\mengchong\application\index\controller\Bbs.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\bbs\index.html [ array (
+  0 => 'data',
+  1 => 'sections',
+  2 => 'state',
+  3 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001828s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_bbstopic` [ RunTime:0.055630s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_bbstopic` WHERE  `tstate` = 2 ORDER BY tid desc LIMIT 10 [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_bbssection` [ RunTime:0.045292s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_bbssection` [ RunTime:0.005510s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:26:55+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php
+[ log ] www.pys.com/mengchong/public/index.php [运行时间：0.051643s][吞吐率：19.36req/s] [内存消耗：2,086.23kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+  2 => 'status',
+  3 => 'model_category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011263s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.001244s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_category` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_category` WHERE  `p_id` = 0 [ RunTime:0.000829s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:38:42+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/index/index
+[ log ] www.pys.com/mengchong/public/index.php/admin/index/index [运行时间：0.027894s][吞吐率：35.85req/s] [内存消耗：1,289.56kb] [文件加载：49]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:38:45+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/login/index.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/login/index.html [运行时间：0.039854s][吞吐率：25.09req/s] [内存消耗：1,216.49kb] [文件加载：45]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ E:\PYS\mengchong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:38:58+08:00 ] 127.0.0.1 127.0.0.1 POST /mengchong/public/index.php/admin/login/logindo.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/login/logindo.html [运行时间：0.720954s][吞吐率：1.39req/s] [内存消耗：1,423.31kb] [文件加载：39]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logindo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.pys.com',
+  'accept' => '*/*',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'admin',
+  'upwd' => 'adnib',
+)
+[ info ] [ RUN ] app\admin\controller\Login->logindo[ E:\PYS\mengchong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.320122s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_admin_user` [ RunTime:0.344314s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_admin_user` WHERE  (   uname = 'admin' ) LIMIT 1 [ RunTime:0.033025s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:39:15+08:00 ] 127.0.0.1 127.0.0.1 POST /mengchong/public/index.php/admin/login/logindo.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/login/logindo.html [运行时间：0.082003s][吞吐率：12.19req/s] [内存消耗：1,509.78kb] [文件加载：43]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logindo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.pys.com',
+  'accept' => '*/*',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'admin',
+  'upwd' => 'admin',
+)
+[ info ] [ RUN ] app\admin\controller\Login->logindo[ E:\PYS\mengchong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038801s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_admin_user` [ RunTime:0.018161s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_admin_user` WHERE  (   uname = 'admin' ) LIMIT 1 [ RunTime:0.001047s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:39:16+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/index/index.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/index/index.html [运行时间：0.734611s][吞吐率：1.36req/s] [内存消耗：1,850.33kb] [文件加载：53]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/login/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\PYS\mengchong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013996s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] select * from mc_admin_user 
+        	LEFT JOIN mc_admin_user_role ON mc_admin_user.uid = mc_admin_user_role.user_id 
+        	LEFT JOIN mc_admin_role ON mc_admin_user_role.role_id = mc_admin_role.rid 
+        	LEFT JOIN mc_admin_role_node ON mc_admin_role.rid = mc_admin_role_node.role_id 
+        	LEFT JOIN mc_admin_node ON mc_admin_role_node.node_id = mc_admin_node.nid
+        	where mc_admin_user.uid = 1 and mc_admin_node.ncontroller = 'Index' and mc_admin_node.naction = 'index' [ RunTime:0.519495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_admin_menu` [ RunTime:0.121012s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_admin_menu` WHERE  `status` = 1 [ RunTime:0.010955s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:39:16+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/index/info.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/index/info.html [运行时间：0.092777s][吞吐率：10.78req/s] [内存消耗：1,381.57kb] [文件加载：49]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->info[ E:\PYS\mengchong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\index\info.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049971s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] select * from mc_admin_user 
+        	LEFT JOIN mc_admin_user_role ON mc_admin_user.uid = mc_admin_user_role.user_id 
+        	LEFT JOIN mc_admin_role ON mc_admin_user_role.role_id = mc_admin_role.rid 
+        	LEFT JOIN mc_admin_role_node ON mc_admin_role.rid = mc_admin_role_node.role_id 
+        	LEFT JOIN mc_admin_node ON mc_admin_role_node.node_id = mc_admin_node.nid
+        	where mc_admin_user.uid = 1 and mc_admin_node.ncontroller = 'Index' and mc_admin_node.naction = 'info' [ RunTime:0.013661s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:39:24+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.265392s][吞吐率：3.77req/s] [内存消耗：1,919.58kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012226s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.121560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.037006s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.006119s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:39:26+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.025834s][吞吐率：38.71req/s] [内存消耗：1,223.55kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:59:23+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/index/index.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/index/index.html [运行时间：0.091249s][吞吐率：10.96req/s] [内存消耗：1,850.82kb] [文件加载：53]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\PYS\mengchong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023680s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] select * from mc_admin_user 
+        	LEFT JOIN mc_admin_user_role ON mc_admin_user.uid = mc_admin_user_role.user_id 
+        	LEFT JOIN mc_admin_role ON mc_admin_user_role.role_id = mc_admin_role.rid 
+        	LEFT JOIN mc_admin_role_node ON mc_admin_role.rid = mc_admin_role_node.role_id 
+        	LEFT JOIN mc_admin_node ON mc_admin_role_node.node_id = mc_admin_node.nid
+        	where mc_admin_user.uid = 1 and mc_admin_node.ncontroller = 'Index' and mc_admin_node.naction = 'index' [ RunTime:0.021060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_admin_menu` [ RunTime:0.002229s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_admin_menu` WHERE  `status` = 1 [ RunTime:0.001780s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:59:24+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/index/info.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/index/info.html [运行时间：0.117065s][吞吐率：8.54req/s] [内存消耗：1,381.83kb] [文件加载：49]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->info[ E:\PYS\mengchong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\index\info.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066409s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] select * from mc_admin_user 
+        	LEFT JOIN mc_admin_user_role ON mc_admin_user.uid = mc_admin_user_role.user_id 
+        	LEFT JOIN mc_admin_role ON mc_admin_user_role.role_id = mc_admin_role.rid 
+        	LEFT JOIN mc_admin_role_node ON mc_admin_role.rid = mc_admin_role_node.role_id 
+        	LEFT JOIN mc_admin_node ON mc_admin_role_node.node_id = mc_admin_node.nid
+        	where mc_admin_user.uid = 1 and mc_admin_node.ncontroller = 'Index' and mc_admin_node.naction = 'info' [ RunTime:0.008557s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:59:25+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.052442s][吞吐率：19.07req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002081s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.014762s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.000972s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T09:59:26+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.028117s][吞吐率：35.57req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T09:59:27+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.075730s][吞吐率：13.20req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038003s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.000904s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:08+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.102297s][吞吐率：9.78req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023170s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.020035s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.025523s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.001205s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:09+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.024472s][吞吐率：40.86req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:09+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.066708s][吞吐率：14.99req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022587s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.008885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:10+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.026592s][吞吐率：37.61req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:11+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.057545s][吞吐率：17.38req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001618s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.001161s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.018579s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:11+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.025581s][吞吐率：39.09req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:12+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.067043s][吞吐率：14.92req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024016s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.004799s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.002371s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:12+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.025565s][吞吐率：39.12req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:13+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.068421s][吞吐率：14.62req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027859s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.003164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.000974s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:13+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.025648s][吞吐率：38.99req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:51+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.067590s][吞吐率：14.80req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014205s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.016312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.000969s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:52+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.025080s][吞吐率：39.87req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:00:53+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.055270s][吞吐率：18.09req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019412s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.001301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.001142s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:01:18+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopindex.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopindex.html [运行时间：0.023767s][吞吐率：42.08req/s] [内存消耗：1,223.59kb] [文件加载：46]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopIndex[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:01:19+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/admin/service/shopshow.html
+[ log ] www.pys.com/mengchong/public/index.php/admin/service/shopshow.html [运行时间：0.090967s][吞吐率：10.99req/s] [内存消耗：1,919.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'service',
+    2 => 'shopshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=scg2t3asdk2l7b22vha1f46ht1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Service->ShopShow[ E:\PYS\mengchong\application\admin\controller\Service.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/admin\view\service\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036253s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_merchant` [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mc_merchant` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.020689s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_merchant` WHERE  `status` = 1 LIMIT 0,6 [ RunTime:0.000996s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/
+[ log ] www.pys.com/mengchong/public/index.php/ [运行时间：0.124534s][吞吐率：8.03req/s] [内存消耗：2,085.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+  2 => 'status',
+  3 => 'model_category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016159s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.012896s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.005241s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.003964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_category` [ RunTime:0.014972s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_category` WHERE  `p_id` = 0 [ RunTime:0.001691s ]
+
+---------------------------------------------------------------
+[ 2017-04-28T10:05:47+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/index/personal.html
+[ log ] www.pys.com/mengchong/public/index.php/index/index/personal.html [运行时间：0.025278s][吞吐率：39.56req/s] [内存消耗：1,295.48kb] [文件加载：47]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'personal',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=klpi3da7m1njtntndlneg3mg65',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->personal[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\personal.html [ array (
+  0 => 'session',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:05:47+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/index/js/fc194781f111c9adf2b8.vendors.min.js
+[ log ] www.pys.com/mengchong/public/index.php/index/index/js/fc194781f111c9adf2b8.vendors.min.js [运行时间：0.026207s][吞吐率：38.16req/s] [内存消耗：1,254.73kb] [文件加载：48]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=klpi3da7m1njtntndlneg3mg65',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:05:47+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/api.share.baidu.com/s.gif?r=http%3A%2F%2Fwww.pys.com%2Fmengchong%2Fpublic%2Findex.php%2F&l=http://www.pys.com/mengchong/public/index.php/index/index/personal.html
+[ log ] www.pys.com/mengchong/public/index.php/index/api.share.baidu.com/s.gif?r=http%3A%2F%2Fwww.pys.com%2Fmengchong%2Fpublic%2Findex.php%2F&l=http://www.pys.com/mengchong/public/index.php/index/index/personal.html [运行时间：0.023564s][吞吐率：42.44req/s] [内存消耗：999.39kb] [文件加载：41]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api.share.baidu.com',
+    2 => 's.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=klpi3da7m1njtntndlneg3mg65',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+  'r' => 'http://www.pys.com/mengchong/public/index.php/',
+  'l' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:05:48+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/index/index/js/acd1ae1fd70dbc450b6f.personal.min.js
+[ log ] www.pys.com/mengchong/public/index.php/index/index/js/acd1ae1fd70dbc450b6f.personal.min.js [运行时间：0.028898s][吞吐率：34.60req/s] [内存消耗：1,255.33kb] [文件加载：48]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=klpi3da7m1njtntndlneg3mg65',
+  'referer' => 'http://www.pys.com/mengchong/public/index.php/index/index/personal.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-28T10:21:58+08:00 ] 127.0.0.1 127.0.0.1 GET /mengchong/public/index.php/
+[ log ] www.pys.com/mengchong/public/index.php/ [运行时间：0.109838s][吞吐率：9.10req/s] [内存消耗：2,086.15kb] [文件加载：55]
+[ info ] [ LANG ] E:\PYS\mengchong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=klpi3da7m1njtntndlneg3mg65',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'www.pys.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\PYS\mengchong\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\PYS\mengchong\public/../application/index\view\index\index.html [ array (
+  0 => 'data_new',
+  1 => 'data_hot',
+  2 => 'status',
+  3 => 'model_category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037994s ] mysql:dbname=mengchong;host=192.168.1.192;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_goods` [ RunTime:0.009792s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `add_time`  desc LIMIT 8 [ RunTime:0.001419s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_goods` WHERE  (  1=1 ) ORDER BY `is_hot`  desc LIMIT 8 [ RunTime:0.008834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mc_category` [ RunTime:0.001503s ]
+[ sql ] [ SQL ] SELECT * FROM `mc_category` WHERE  `p_id` = 0 [ RunTime:0.000881s ]
+
+---------------------------------------------------------------

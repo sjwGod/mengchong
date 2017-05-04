@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="apple-touch-startup-image" href="__ROOT__/qq/zn/icon.png" />
+<link rel="apple-touch-icon" href="__ROOT__/qq/zn/icon57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="__ROOT__/qq/zn/icon72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="__ROOT__/qq/zn/icon114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="__ROOT__/qq/zn/icon144.png" />
+<link href="__ROOT__/qq/zn/style/common.css" rel="Stylesheet" type="text/css" />
+<link href="__ROOT__/qq/zn/style/topic.css" rel="Stylesheet" type="text/css" />
+<link href="__ROOT__/qq/zn/style/smile.css" rel="Stylesheet" type="text/css" />
+<link href="__ROOT__/qq/zn/style/imageUpload.css" rel="Stylesheet" type="text/css" />
+<title>萌宠 发帖子</title>
+<meta name="keywords" content="萌宠" />
+<meta name="description" content="萌宠" />
+</head>
+<body>
+
+<script type="text/javascript" src="__ROOT__/qq/zn/script/zepto.min.js"></script>
+<script type="text/javascript" src="__ROOT__/qq/zn/script/common.js"></script>
+
+<div id="dd_more">
+	<a href="liebiao.html" class="dd_bt1 dd_bt">全部圈子</a>
+	<a rel="nofollow" href="#" class="dd_bt2 dd_bt">我的圈圈</a>
+	<a rel="nofollow" href="#" class="dd_bt3 dd_bt">我的好友</a>
+	<a rel="nofollow" href="#" class="dd_bt4 dd_bt">退出登陆</a>
+</div>
+<div id="dd_msg">
+		<script type="text/javascript" src="__ROOT__/qq/zn/script/msg.js"></script>
+	<div class="msgLoading"></div>
+	<p class="tC"><a href="../ShowMessage.html">查看更多&gt;</a></p>
+</div>
+<header id="header" class="ch m">
+		<a rel="nofollow" href="javascript:;" id="returnq" onclick="history.back()"><em>返回</em></a>
+</header>
+
+<section class="m" id="content">
+
+	<!--楼层-->
+	<div id="ajaxList">
+	</div>
+	<!--底部评论-->
+
+
+	<div class="z3" style="text-align:center">
+	</div>
+
+
+
+	<form action="{:url('bbs/addtopic')}" method="post">
+	<div id="bReply" class="reply">
+		<textarea class="editor" placeholder="输入你要发表的标题…" name="topic" style="height: 35px"></textarea>
+		<textarea class="editor" placeholder="在这里输入你要发表的内容…" name="tcontents"></textarea>
+		<input type="hidden" value={$tsid} name="tsid">
+
+		<!-- 用户登录的时候 -->
+		<!--木有登录的时候-->
+
+	</div>
+	<div class="z3" style="text-align:center">
+		<!--<a href="../LoginPage.html" class="bb"></a>-->
+		<button class="bb" type="submit">发帖</button>
+		<button class="gb" type="reset">重置</button>
+		&nbsp;
+		<!--<a href="../RegisterPage.html" class="gb">重置</a>-->
+	</div>
+	</form>
+
+
+
+	<div id="uploadPrew"></div>
+</section>
+
+<footer id="footer">
+ <!--<a href="index.html">首页</a>  <a href="liebiao.html">文章列表页</a>  <a href="zhengwen.html">正文页</a>-->
+</footer>
+<a href="#header" id="bTop" title="返回顶部"></a>
+
+</body>
+<script>
+	var topicId = "10899981";
+	var roleId = "";
+	var ttqId = "20";
+	//禁封的么?
+	function checkForbidInfo(){
+		return true;
+	};
+</script>
+<script type="text/javascript" src="__ROOT__/qq/zn/script/smile.js"></script>
+<script type="text/javascript" src="__ROOT__/qq/zn/script/imageUpload.js"></script>
+<script type="text/javascript" src="__ROOT__/qq/zn/script/topic.js"></script>
+<!-- 收藏话题/上传图片的引导脚本 -->
+
+</html>

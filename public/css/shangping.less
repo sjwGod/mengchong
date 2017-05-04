@@ -1,0 +1,118 @@
+@import url("reset.css");
+.whb(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+};
+.bo(@dw:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @dw;
+    
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+      font-family: "宋体";
+}
+.box{
+    .whb(100%,100%,none);
+    .bo;
+    header{
+        .whb(100%,4rem,none);
+        .bo(horizontal);
+          border-bottom: 1px solid #b0b0b0;
+        .h_left{
+            .whb(4rem,3.9rem,none);
+            text-align: center;
+            line-height: 3.9rem;
+            font-size: 1.6rem;
+          a{
+               color: #f95850;
+           }
+            
+        }
+        .h_center{
+            -webkit-box-flex: 1;
+            line-height: 4rem;
+            h2{
+                text-align: center;
+                line-height: 4rem;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+        .h_right{
+            .whb(4rem,3.9rem,none);
+            text-align: center;
+            line-height: 5rem;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        overflow: auto;
+        &::-webkit-scrollbar{width:0;}
+        .tilte{
+            .whb(100%,3.5rem,none);
+            border-bottom: 1px solid #dcdcdc;
+            ul{
+                .bo(horizontal);
+                li{
+                    -webkit-box-flex: 1;
+                    text-align: center;
+                    border-left: 1px solid #dcdcdc;
+                    padding: 10px;
+                    img{
+                        margin-left: 10px;
+                    }
+                    a{
+                        color: #382b32;
+                    }
+                }
+            }
+        }
+        .list{
+            .whb(100%,8.8rem,none);
+            margin-top: 10px;
+            dl{
+                .bo(horizontal);
+                line-height: 2rem;
+                dt{
+                    .whb(9.4rem,8.8rem,none);
+                    padding: 10px 20px;
+                }
+                dd{
+                   -webkit-box-flex: 1; 
+                   h2{
+                       font-size: 1.4rem;
+                       font-weight: bold;
+                       padding: 5px;
+                   }
+                   p{
+                       display: inline-block;
+                      
+                   }
+                   span{
+                       padding: 15px;
+                       color: #919191;
+                   }
+                }
+            }
+            ul{
+                li{
+                    line-height: 2.6rem;
+                    img{
+                        vertical-align: middle;
+                    }
+                    p{
+                        margin-left: 5px;
+                        color: #9f9f9f;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

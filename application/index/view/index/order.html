@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0, maximum-scale=1.0">
+<meta content="telephone=no" name="format-detection" />
+<title>帮5买触屏版手机导购网站模板 - 文章正文</title>
+
+
+<link rel="stylesheet" href="__ROOT__/css/wap/index.css" type="text/css" />
+<script type="text/javascript" src="__ROOT__/js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="__ROOT__/css/wap/korea.css" />
+
+</head>
+<body>
+    <div class="news">
+        <div class="news-fixed">
+            <!-- <span class="fl">&lt;</span> -->
+            <a href="javascript:history.go(-1);" class="fl"></a>
+            <h1>订单详情</h1>
+        </div>
+        <div class="news-article">
+        <center>
+            <p style="color: red">温馨提示：订单提交成功，不再予以退回，请确认相关商品信息后提交订单</p>
+        </center>
+        </div>
+			<form action="{:Url('index')}" method="post" id="form" onsubmit="return true">
+
+			<input type="hidden" class="a" name="address_name" value="" />
+			<input type="hidden" class="b" name="address" value="" />
+			<input type="hidden" name="address_tel" value="{$data.address_tel}" />
+			<input type="hidden" name="price_all" value="{$priceall}" />
+
+		        <div class="news-recommend">
+		        <center>
+		        	<span>姓名:</span><span style="color: red">{$data.user_name}</span>
+		        	<span>手机号:</span><span style="color: red">{$data.address_tel}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red">默认</span>
+		        	<p>收货人姓名：<input class="address_name" type="text" name="address_name" value="{$data.address_name}"></p>
+		        	<p>收货人地址：<input class="address" type="text" name="address" value="{$data.address}"></p>
+		        	
+		        </center>
+		        </div>
+
+		        <div>
+					<p style="color: red">mc萌宠</p>	
+		        </div>
+		        <div>
+					<p style="font-size: 20px; text-align: center;">你总共选择{$count}件商品，共计￥<span class="pp">{$priceall}.00</span></p>
+		        </div>
+		        <div style="font-size: 16px">
+		        <center>
+		        	<p><input type="radio" class="pay" name="pay" value="萌宠支付">萌宠支付 <input type="radio" name="pay" class="pay"  value="微信支付">微信支付</p>
+					<input type="submit" value="前去支付" class="submit">
+				</center>
+		        </div>
+			</form>
+    </div>
+    <br>
+    
+
+
+<footer class="footer">
+	<div class="top">
+
+			欢迎登录<span style="color:red;">萌宠商城</span>
+			<a href="{:url('login/login')}" >退出账号</a>
+		
+		<!-- <a href=""></a><a href=""></a><a class="btn" href="#">Top</a> -->
+	</div>
+
+	<p>Copyright&nbsp;&nbsp;&nbsp;萌宠商城 版权所有</p>
+</footer>
+
+
+</body>
+</html>
+<script src="__ROOT__/js/jquery-2.1.1.min.js"></script>
+<script>
+	$('#form').submit(function()
+	{
+		//判断是否选择支付方式
+		var pay = $('.pay');
+		var form = $('.form');
+		var len = pay.length;
+		var num = 0;
+		for(var i=0;i<len;i++)
+		{
+			
+			if(pay.eq(i).prop('checked'))
+			{
+				num ++;
+			}
+		}
+		var address_name = $('.address_name').val();
+		var address = $('.address').val();
+
+		$('.a').val(address_name);
+		$('.b').val(address);
+
+		if(num == 0)
+		{
+			return false;
+		}
+
+		
+	})
+</script>
